@@ -12,7 +12,7 @@ datasource db {
 
 
 model user{
-  id int @id @default(auoincrement())
+  id int @id @default(autoincrement())
   createAt DataTime @default(now())
   updateAt DataTime @default
 
@@ -27,7 +27,7 @@ model user{
 }
 
 model bookmark {
-    id int @id @default(auoincrement())
+    id int @id @default(autoincrement())
   createAt DataTime @default(now())
   updateAt DataTime @default
 
