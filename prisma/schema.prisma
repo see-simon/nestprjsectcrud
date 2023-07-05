@@ -12,9 +12,9 @@ datasource db {
 
 
 model user{
-  id int @id @default(autoincrement())
-  createAt DataTime @default(now())
-  updateAt DataTime @default
+  id Int @id @default(autoincrement())
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 
   email String
   hash String
@@ -27,9 +27,11 @@ model user{
 }
 
 model bookmark {
-    id int @id @default(autoincrement())
-  createAt DataTime @default(now())
-  updateAt DataTime @default
+    id Int @id @default(autoincrement())
+  createdAt DateTime @default(now())
+
+  updatedAt DateTime @updatedAt
+  
 
   title String
   discription String?
